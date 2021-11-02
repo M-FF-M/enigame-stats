@@ -30,7 +30,7 @@ function showDiagramTime(idxset, ep = '') {
     const p = teams[i2].progression;
     const jmin = ep == '' ? 0 : episodes[parseInt(ep) - 1].startIdx;
     const jmax = ep == '' ? p.length : episodes[parseInt(ep) - 1].endIdx;
-    for (let j = jmin; j < jmax; j++) {
+    for (let j = jmin; j < jmax && j < p.length; j++) {
       if (j == jmin) {
         labs.push(p[j].timeStart);
         cset.push({ x: new Date(p[j].timeStart), y: 0 });
