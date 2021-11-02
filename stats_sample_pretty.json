@@ -1,0 +1,90 @@
+{
+  "gid":24,
+  "name":"fall edition",
+  "start":"2020-11-13T16:00:00Z",
+  "end":"2020-11-16T22:59:00Z",
+  "memes":[
+     {
+        "gid":497,
+        "filename":"4m8u9d.jpg",
+        "favorite":false,
+        "discordUser":"Ptolemy"
+     }
+  ],
+  "photos":[
+     null
+  ],
+  "participantStats":{
+     "answerRankings":[
+        {
+           "count":709,
+           "user":{
+              "username":"erik.suenderhauf"
+           }
+        }
+     ],
+     "affiliationDistribution":[
+        {
+           "count":226,
+           "affiliation":{
+              "name":"unspecified"
+           }
+        }
+     ],
+     "facultyDistribution":[
+        {
+           "count":119,
+           "faculty":{
+              "name":"unspecified"
+           }
+        }
+     ]
+  },
+  "ranking":[
+     {
+        "name":"unorganized machine",
+        "progressions":[
+           {
+              "started":"2020-11-14T17:30:01Z",
+              "solved":"2020-11-14T20:26:10Z",
+              "rank":1,
+              "episodeTask":{
+                 "task":{
+                    "name":"doctor count"
+                 }
+              }
+           }
+        ]
+     }
+  ],
+  "episodes":[
+     {
+        "gid":86,
+        "name":"enigame is start",
+        "episodeTasks":[
+           {
+              "gid":706,
+              "task":{
+                 "name":"Classic",
+                 "content":"<img src=\"classic.png\" style=\"max-width: 100%;\">",
+                 "solution":"gold + fish = goldfish",
+                 "answers":[
+                    {
+                       "pattern":"goldfish"
+                    }
+                 ]
+              },
+              "progressions":[
+                 {
+                    "started":"2020-11-13T16:00:00Z",
+                    "solved":"2020-11-13T16:00:07Z",
+                    "team":{
+                       "name":"UrbanStateOfMind"
+                    }
+                 }
+              ]
+           }
+        ]
+     }
+  ]
+}

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Enigame Statistics</title>
+  <meta name="description" content="Enigame Statistics">
+  <meta name="author" content="Fabian Michel">
+
+  <link rel="shortcut icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="XXX.css"> -->
+  <script src="Chart.bundle.min.js"></script>
+  <script src="stats_simplified_spacedout2021.js"></script>
+  <script src="statistics.js"></script>
+  <style type="text/css">
+  
+    body {
+      font-family: 'Jura', sans-serif;
+      background-color: #2f3a40;
+      color: #f4f5f5;
+    }
+
+    .chart-container {
+      height: 600px;
+    }
+
+    .chart-container.large {
+      height: 1200px;
+    }
+
+    #select-h {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    #select-h img {
+      height: 4em;
+      width: 4em;
+      margin-right: 2em;
+      filter: invert(1);
+    }
+
+    #select-div table {
+      border-collapse: collapse;
+      padding: 0em;
+      margin: 0em;
+    }
+    
+    #select-div table td {
+      padding-left: 0.2em;
+      padding-right: 0.2em;
+    }
+
+    #select-div table td:first-child {
+      padding-left: 0em;
+      margin-left: 0em;
+    }
+
+  </style>
+</head>
+
+<body onLoad="main();">
+  <div id="select-div">
+    <span id="select-h"><img src="favicon.svg" /><h1>Enigame &ndash; Statistics</h1></span>
+    Select teams to show (primary and secondary team are shown in all graphics): <br>
+    <table>
+      <tr><td>Primary team:</td><td><select id="primary-select"></select></td></tr>
+      <tr><td>Secondary team:</td><td><select id="secondary-select"></select></td></tr>
+      <tr><td colspan="2">In addition, show the first <select id="num-select"></select> teams (excepting the ones selected above)</td></tr>
+    </table>
+  </div>
+  <div id="summary"></div>
+  <h3>Rank Progression</h3>
+  <div>
+    <div class="chart-container" id="enistatsrk-container"><canvas id="enistatsrk" width="1200" height="600"></canvas></div>
+  </div>
+  <h3>Team Progression</h3>
+  <div>
+    <div class="chart-container" id="enistats-container"><canvas id="enistats" width="1200" height="600"></canvas></div>
+  </div>
+  <span id="team-progr-episodes">
+    <h3>Team Progression Episode 1</h3>
+    <div>
+      <div class="chart-container" id="enistats1-container"><canvas id="enistats1" width="1200" height="600"></canvas></div>
+    </div>
+    <h3>Team Progression Episode 2</h3>
+    <div>
+      <div class="chart-container" id="enistats2-container"><canvas id="enistats2" width="1200" height="600"></canvas></div>
+    </div>
+  </span>
+  <h3 id="avg-time-h3">Average Time per Riddle (in minutes)</h3>
+  <div>
+    <div class="chart-container large" id="enistatsavg-container"><canvas id="enistatsavg" width="1200" height="1200"></canvas></div>
+  </div>
+</body>
+</html>
